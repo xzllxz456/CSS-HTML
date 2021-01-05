@@ -1,0 +1,42 @@
+<!DOCTYPE thml>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>radio, checkbox</title>
+        <style>
+            label{
+                user-select: none;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h2>input radio, checkbox</h2>
+        <form>
+            이름 : <input type="text" name="name"> <br>
+            <!--radio로 값을 하나만 선택-->
+            <input type="radio" name="gender" value="male"> 남자
+            <input type="radio" name="gender" value="female"> 여자
+            <hr>
+            
+            <!--Checkbox로 값을 여러개 선택-->
+            <input type="checkbox" name="hobby" value="baseball">야구
+            <input type="checkbox" name="hobby" value="football">축구
+            <input type="checkbox" name="hobby" value="basketball">농구
+            <input type="checkbox" name="hobby" value="tennisball">테니스
+            
+            <hr>
+                        
+            <hr> <hr>
+            <!--label 연결하기-->
+            <h3>label 사용 checbox와 텍스트 연결</h3>
+            <input type="checkbox" name="hobby2" value="baseball" id="baseball2">
+            <label for="baseball2">야구</label>
+            <input type="checkbox" name="hobby2" value="football" id="soccer2">
+            <label for="soccer2">축구</label>
+            <hr>
+            <input type="submit" value="전송">
+
+        </form>
+    </body>
+</html>
