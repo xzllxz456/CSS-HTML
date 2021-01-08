@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> position: absolute </title>
+    <style>
+        div{
+            width: 200px; height: 200px;
+            border: 1px solid black;
+            position: absolute;
+            display: inline-block
+/*            display: block;*/
+        }
+        #div1{ 
+            background-color: red;
+            top: -50px; /*위쪽 기준 위로 50px이동*/
+            left: -50px; /* 왼쪽으로 50이동*/
+        }
+        
+        #div2{ 
+            background-color: green;
+            top: 200px; /*위쪽 기준 아래로200px이동*/
+            left: 200px; /*우측으로 200px이동*/
+        }
+        #div3{ 
+            background-color: blue;
+            right: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS position: static</h2>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+</body>        
+</html>

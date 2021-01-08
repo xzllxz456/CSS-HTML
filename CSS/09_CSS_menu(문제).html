@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 메뉴만들기 </title>
+    <style>
+        nav ul{
+/*            position: relative;*/
+/*            width: 500px; 보모요소에 크기지정을 안하거나 relative 안하면 이상라게 동작한다*/
+            border: 3px solid black;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: black;
+        }
+        li {
+            float: left;
+            border-right: 2px solid white;
+            
+        }
+        li:last-child{
+            border-left: 2px solid white;;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: gray
+        }
+    
+        
+        li a:hover:not(.active){
+            background-color: darkmagenta;
+        }
+        .active {
+            background-color:  red;
+        }
+        .rightfloat{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="rightfloat"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>복숭아</li>
+            <li>배</li>
+        </ul>
+    </div>
+    
+</body>        
+</html>
